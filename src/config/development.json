@@ -1,0 +1,32 @@
+{
+  "enableConfig": true,
+  "appName": "codejobs",
+  "serverPort": 4444,
+  "baseUrl": "http://localhost:4444",
+  "app": {
+    "default": "home",
+    "allowed": ["home"]
+  },
+  "webpack": {
+    "app": {
+      "home": "src/frontend/app/home"
+    },
+    "paths": {
+      "build": "src/public"
+    },
+    "extensions": ["", ".js", ".jsx"],
+    "devtool": "cheap-module-eval-source-map"
+  },
+  "views": {
+    "engine": ".hbs",
+    "extension": ".hbs",
+    "layout": "main"
+  },
+  "html": {
+    "minify": false,
+    "css": {
+      "stylusPrecompile": false,
+      "compress": false
+    }
+  }
+}

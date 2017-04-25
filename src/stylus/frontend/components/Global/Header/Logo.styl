@@ -1,0 +1,41 @@
+$Logo($isLogin = false)
+    if ($isLogin == false)
+        float left
+    else
+        margin 0 auto
+
+    margin-top 10px
+    margin-bottom 15px
+    width 213px
+
+    @media Mobile
+        if ($isLogin == true)
+            width 140px
+
+    a
+        color $gray6
+        display block
+        padding 9px 12px 6px
+        transition background .6s ease-out
+        z-index 200
+
+        img
+            display inline-block
+            margin 0
+            margin-right 5px
+            vertical-align middle
+            width 65px
+
+            @media Mobile
+                if ($isLogin == true)
+                    width 120px
+
+        .text
+            $font($openSans, $xLarge, $bold)
+            vertical-align middle
+
+            @media Mobile
+                display none
+
+            .code
+                color $firstColor

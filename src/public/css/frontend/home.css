@@ -1,0 +1,220 @@
+@import url("../../../bower_components/font-awesome/css/font-awesome.min.css");
+@import url("../../../bower_components/normalize-css/normalize.css");
+@font-face {
+  font-family: 'OpenSans';
+  src: url("/assets/fonts/OpenSans/font.woff2") format('woff2'), url("/assets/fonts/OpenSans/font.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url("/assets/fonts/Oswald/font.woff2") format('woff2'), url("/assets/fonts/Oswald/font.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'WorkSans';
+  src: url("/assets/fonts/WorkSans/font.woff2") format('woff2'), url("/assets/fonts/WorkSans/font.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url("/assets/fonts/Poppins/font.woff2") format('woff2'), url("/assets/fonts/Poppins/font.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #fff;
+  font-family: 'WorkSans', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+body input {
+  appearance: none;
+  background-clip: padding-box;
+  outline: none;
+}
+.hidden {
+  display: none !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.Header {
+  position: relative;
+  z-index: 9999;
+}
+.Header .wrapper {
+  *zoom: 1;
+  margin: 0 auto;
+  width: 90%;
+}
+.Header .wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+.Header .Logo {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 213px;
+}
+.Header .Logo a {
+  color: #666;
+  display: block;
+  padding: 9px 12px 6px;
+  transition: background 0.6s ease-out;
+  z-index: 200;
+}
+.Header .Logo a img {
+  display: inline-block;
+  margin: 0;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 65px;
+}
+.Header .Logo a .text {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+@media Mobile {
+  .Header .Logo a .text {
+    display: none;
+  }
+}
+.Header .Logo a .text .code {
+  color: #0073bc;
+}
+.Header .MainNav {
+  position: relative;
+}
+.Header .MainNav .toggle a {
+  display: none;
+}
+@media Tablet {
+  .Header .MainNav .toggle a {
+    font-size: 24px;
+    font-size: 1.5rem;
+    color: #000;
+    display: block;
+    float: right;
+    margin-top: 30px;
+  }
+}
+.Header .MainNav .mobile {
+  position: absolute;
+  top: 86px;
+  right: -10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 1px 3px 5px -1px rgba(0,0,0,0.25);
+  padding: 25px;
+  width: 145px;
+}
+.Header .MainNav .mobile li {
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.Header .MainNav .mobile li a {
+  color: #000;
+}
+.Header .MainNav .mobile li a:hover {
+  color: #ff2d55;
+}
+@media only screen and (min-width: 769px) {
+  .Header .MainNav .mobile {
+    display: none;
+  }
+}
+.Header .MainNav .desktop {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+@media Tablet {
+  .Header .MainNav .desktop {
+    display: none;
+  }
+}
+.Header .MainNav .desktop li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.Header .MainNav .desktop li a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+  padding: 35px 10px;
+}
+.Header .MainNav .desktop li a:hover {
+  color: #ff2d55;
+}
+.Content {
+  margin: 0 auto;
+  min-height: 400px;
+  max-width: 960px;
+  width: 90%;
+}
+.Footer {
+  background-color: #000;
+  margin: 0 auto;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #fff;
+  line-height: 34px;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+.Footer a {
+  color: #0073bc;
+}
+.Footer a.backToTop {
+  font-size: 18px;
+  font-size: 1.125rem;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  background: #ff2d55;
+  border-radius: 25px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  opacity: 0;
+  padding: 10px;
+  text-align: center;
+  transition: color 300ms, background-color 300ms, opacity 300ms;
+  width: 45px;
+  z-index: 9999;
+}
+.Footer a.backToTop i {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+}
+.Footer a.backToTop.show {
+  opacity: 1;
+}

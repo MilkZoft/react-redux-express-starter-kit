@@ -1,0 +1,35 @@
+$Footer()
+    $background($black)
+    $center()
+    $fontSize($small)
+    color $white
+    line-height 34px
+    padding 25px 0
+    text-align center
+    width 100%
+
+    a
+        color $firstColor
+
+        &.backToTop
+            $fontSize($large)
+            $position(fixed, false, 10px, 20px)
+            background $pink
+            border-radius 25px
+            box-sizing border-box
+            color $white
+            cursor pointer
+            display block
+            height 45px
+            opacity 0
+            padding 10px
+            text-align center
+            transition color 300ms, background-color 300ms, opacity 300ms
+            width 45px
+            z-index 9999
+
+            i
+                $position(absolute, 12px, false, false, 17px)
+
+            &.show
+                opacity 1

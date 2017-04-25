@@ -1,0 +1,61 @@
+$MainNav()
+    $position(relative)
+
+    .toggle
+        a
+            display none
+
+            @media Tablet
+                $fontSize($xLarge)
+                color $black
+                display block
+                float right
+                margin-top 30px
+
+    .mobile
+        $position(absolute, 86px, -10px)
+        $resetList()
+        background-color $white
+        border-bottom-right-radius 10px
+        border-bottom-left-radius 10px
+        box-shadow 1px 3px 5px -1px rgba(0, 0, 0, 0.25)
+        padding 25px
+        width 145px
+
+        li
+            $uppercase()
+            line-height 40px
+
+            a
+                $bold()
+                color $black
+
+                &:hover
+                    color $secondColor
+
+        +minBreakpoint(769px)
+            display none
+
+    .desktop
+        $resetList()
+        display inline-block
+        float right
+
+        @media Tablet
+            display none
+
+        li
+            $position(relative)
+            display inline-block
+            margin 0
+            padding 0
+
+            a
+                $fontSize($medium, $bold)
+                $uppercase()
+                color $black
+                display block
+                padding 35px 10px
+
+                &:hover
+                    color $secondColor
