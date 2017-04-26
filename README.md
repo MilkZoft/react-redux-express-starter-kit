@@ -54,7 +54,7 @@ sudo apachectl restart
 gulp
 ```
 
-* Run the application at [http://local.codejobs.biz](http://local.codejobs.biz)
+* Run the application at [http://local.myreactapp.com](http://local.myreactapp.com)
 
 ### Tasks
 
