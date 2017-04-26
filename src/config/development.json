@@ -2,7 +2,7 @@
   "enableConfig": true,
   "appName": "codejobs",
   "serverPort": 4444,
-  "baseUrl": "http://localhost:4444",
+  "baseUrl": "http://local.myreactapp.com",
   "app": {
     "default": "home",
     "allowed": ["home"]

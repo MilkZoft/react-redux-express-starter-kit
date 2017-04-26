@@ -1,7 +1,7 @@
 {
   "appName": "codejobs",
   "serverPort": 4444,
-  "baseUrl": "http://localhost:4444",
+  "baseUrl": "http://www.myreactapp.com",
   "app": {
     "default": "home",
     "allowed": ["home"]
