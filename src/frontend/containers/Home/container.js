@@ -13,10 +13,7 @@ class Home extends Component {
 
   render() {
     const {
-      isMobile,
-      match: {
-        params
-      }
+      isMobile
     } = this.props;
 
     return (

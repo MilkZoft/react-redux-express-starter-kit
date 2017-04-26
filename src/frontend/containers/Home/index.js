@@ -1,6 +1,5 @@
 // Dependencies
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 // Main Container
 import Home from './container';
