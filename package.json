@@ -9,6 +9,7 @@
   },
   "scripts": {
     "precommit": "gulp analyze",
+    "prepush": "gulp test",
     "postmerge": "yarn",
     "postrewrite": "yarn",
     "build": "webpack --config webpack.config.babel.js"
